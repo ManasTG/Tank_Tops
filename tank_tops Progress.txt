@@ -21,4 +21,7 @@ Follow: tank_top
 
 7-1-25
 TODO: Set up the main playground, BG, make the block move
-Done: 
+Done: BG, Made the block move like a tank (extra: Fix the reverse direction issue of tank,)
+
+8-1-25
+TODO:  shooting mechanism(just click and shoot); if time allows then turrent rotation following cursor(no shooting with it)
