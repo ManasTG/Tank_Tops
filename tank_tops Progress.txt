@@ -1,0 +1,24 @@
+Tank Top - 
+Timeline: 12+ months
+Idea:
+Phase 1(0-3 Months):
+	1. Top Down tank game with rotatable turrents
+	2. Simple Roam, look and shoot AI Tanks
+	3. Simple grounds for cover and all
+	4. Health based system
+Phase 2(3-6or8 Months):
+	1. Design the tank
+	2. Ricochet at an angle; Basic Shells Dynamics
+	3. Advance AI for Tank; Stop, look around, assess Situation(How? IDK), etc
+	4. Artillery System for backup
+Phase 3(6or8 -12 Months):
+	1. Designing advance visual(or anything better then before)
+	2. War Thunder Type damage module; Replaces the health system
+	3. Advance Shells dynamics
+	4. Multiple stages, i.e., major tanks of 2-4 nations with there own armor, and fire dynamics.
+
+Follow: tank_top
+
+7-1-25
+TODO: Set up the main playground, BG, make the block move
+Done: 

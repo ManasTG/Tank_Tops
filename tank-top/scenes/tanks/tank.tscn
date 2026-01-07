@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbbyfbudo2rht"]
+
+[ext_resource type="Script" uid="uid://osqrkx5e3ftr" path="res://scripts/tanks/tank.gd" id="1_lo072"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_22f26"]
+size = Vector2(32, 48)
+
+[node name="tank" type="CharacterBody2D"]
+script = ExtResource("1_lo072")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(16, -24)
+shape = SubResource("RectangleShape2D_22f26")
+
+[node name="base" type="ColorRect" parent="."]
+offset_top = -48.0
+offset_right = 32.0
+color = Color(0.56640625, 0.42380214, 0.20133972, 1)
