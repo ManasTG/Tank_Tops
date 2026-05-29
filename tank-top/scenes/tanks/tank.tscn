@@ -1,18 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbbyfbudo2rht"]
+[gd_scene format=3 uid="uid://cbbyfbudo2rht"]
 
-[ext_resource type="Script" uid="uid://osqrkx5e3ftr" path="res://scripts/tanks/tank.gd" id="1_lo072"]
+[ext_resource type="Script" uid="uid://osqrkx5e3ftr" path="res://scripts/tanks/tank_movement.gd" id="1_lo072"]
+[ext_resource type="Script" uid="uid://ji1llce7wbus" path="res://scripts/tanks/turret.gd" id="2_5efal"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_22f26"]
 size = Vector2(32, 48)
 
-[node name="tank" type="CharacterBody2D"]
+[node name="tank" type="CharacterBody2D" unique_id=1493439426]
 script = ExtResource("1_lo072")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=39510301]
 shape = SubResource("RectangleShape2D_22f26")
 
-[node name="base" type="ColorRect" parent="."]
+[node name="base" type="ColorRect" parent="." unique_id=728578665]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -25,3 +25,13 @@ offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.56640625, 0.42380214, 0.20133972, 1)
+
+[node name="turret" type="Node2D" parent="." unique_id=1112934740]
+script = ExtResource("2_5efal")
+
+[node name="ColorRect" type="ColorRect" parent="turret" unique_id=1452796057]
+z_index = 1
+offset_left = -3.0
+offset_top = -15.0
+offset_right = 3.0
+offset_bottom = 3.0
