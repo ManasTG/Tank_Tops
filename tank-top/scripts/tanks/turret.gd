@@ -1,13 +1,16 @@
 extends Node2D
 
+var shellScene = preload("res://scenes/shells/shell.tscn")
+@onready var muzzle: ColorRect = $muzzle
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var shellVel = 20
 
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("shoot"):
+		spawn_shell()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	
-	
-	pass
+func spawn_shell():
+	var shell = shellScene.instantiate()
+	add_child(shell)
+	shell.position = muzzle.position
+##	shell.velocity = shellVel

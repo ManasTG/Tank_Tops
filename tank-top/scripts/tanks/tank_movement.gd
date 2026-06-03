@@ -7,7 +7,7 @@ const rotation_speed: int = 180
 
 func _physics_process(delta: float) -> void:
 
-	# Go forward and backwars
+	# Go forward and backwards
 	var move_input := Input.get_action_strength("forward") - Input.get_action_strength("backward")
 
 	# input right and left then convert it into rotiation form in rotation_degrees

@@ -9,7 +9,7 @@ size = Vector2(32, 48)
 [node name="tank" type="CharacterBody2D" unique_id=1493439426]
 script = ExtResource("1_lo072")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=39510301]
+[node name="baseCols" type="CollisionShape2D" parent="." unique_id=39510301]
 shape = SubResource("RectangleShape2D_22f26")
 
 [node name="base" type="ColorRect" parent="." unique_id=728578665]
@@ -29,9 +29,17 @@ color = Color(0.56640625, 0.42380214, 0.20133972, 1)
 [node name="turret" type="Node2D" parent="." unique_id=1112934740]
 script = ExtResource("2_5efal")
 
-[node name="ColorRect" type="ColorRect" parent="turret" unique_id=1452796057]
+[node name="barrel" type="ColorRect" parent="turret" unique_id=1452796057]
 z_index = 1
 offset_left = -3.0
-offset_top = -15.0
+offset_top = -25.0
 offset_right = 3.0
-offset_bottom = 3.0
+offset_bottom = 1.0
+
+[node name="muzzle" type="ColorRect" parent="turret" unique_id=118533829]
+z_index = 1
+offset_left = -1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = -25.0
+color = Color(0, 0.6484404, 0.6364401, 1)

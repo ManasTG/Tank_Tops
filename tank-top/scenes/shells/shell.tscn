@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bygpptse8xosa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kkdsp"]
+radius = 3.0
+
+[node name="Shell" type="Node2D" unique_id=1937956599]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1787694360]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1394627928]
+shape = SubResource("CircleShape2D_kkdsp")
+
+[node name="ColorRect" type="ColorRect" parent="RigidBody2D" unique_id=1907299633]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 2.0
+color = Color(0.3264606, 0.37505588, 0.6934657, 1)
