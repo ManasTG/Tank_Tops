@@ -36,10 +36,6 @@ offset_top = -25.0
 offset_right = 3.0
 offset_bottom = 1.0
 
-[node name="muzzle" type="ColorRect" parent="turret" unique_id=118533829]
-z_index = 1
-offset_left = -1.0
-offset_top = -26.0
-offset_right = 1.0
-offset_bottom = -25.0
-color = Color(0, 0.6484404, 0.6364401, 1)
+[node name="muzzle" type="Node2D" parent="turret" unique_id=775531376]
+position = Vector2(0, -26)
+rotation = -1.5707964
