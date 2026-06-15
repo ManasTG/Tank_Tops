@@ -31,14 +31,18 @@ TODO: Shooting mechanism(just click and shoot); if time allows then turrent rota
 TODO: Click and shoot.
 Done: turrent model
 
-3-5-26
+3-6-26
 TODO: Click and spawn
 Done: Click and spawned
 
-6-5-26
+6-6-26
 TODO: Velocity of the Shells
 Done: Shells are moving
 
-7-5-26
+15-6-26
 TODO: Shells improvements: Shell should not interfere with my tank body (slowing it down, like it is touching it), if it hits an object it should stop, destroy
+Done: 1. Made the shell not interfere by making it such that the shell and the tank are on different collision layer. 2. despawns when colliding with any object
+
+16-6-26
+TODO: Health System: 1. Make an static enemy tank which has health. 2. Whenever the 'enemy tank' is hit the health goes down
 Done:

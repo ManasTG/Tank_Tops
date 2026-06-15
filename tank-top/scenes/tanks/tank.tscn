@@ -30,7 +30,6 @@ color = Color(0.56640625, 0.42380214, 0.20133972, 1)
 script = ExtResource("2_5efal")
 
 [node name="barrel" type="ColorRect" parent="turret" unique_id=1452796057]
-z_index = 1
 offset_left = -3.0
 offset_top = -25.0
 offset_right = 3.0

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://piurdup4nh2r" path="res://assets/sprites/map_background/basic_map_bg.png" id="1_fwjtt"]
 [ext_resource type="PackedScene" uid="uid://cbbyfbudo2rht" path="res://scenes/tanks/tank.tscn" id="2_ry644"]
+[ext_resource type="PackedScene" uid="uid://bj71dd5evm1a7" path="res://scenes/Objects/object_1.tscn" id="3_ce1uw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ry644"]
 texture = ExtResource("1_fwjtt")
@@ -31,3 +32,8 @@ position = Vector2(111, 103)
 [node name="Camera2D" type="Camera2D" parent="tank" unique_id=551122065]
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
+
+[node name="Objects" type="Node" parent="." unique_id=172721201]
+
+[node name="Object_1" parent="Objects" unique_id=1168972562 groups=["Object_grp"] instance=ExtResource("3_ce1uw")]
+position = Vector2(62, 17)

@@ -12,6 +12,7 @@ func _input(event: InputEvent) -> void:
 func spawn_shell():
 	var shell = shellScene.instantiate()
 
+
 	shell.global_position = muzzle.global_position
 	shell.global_rotation = global_rotation
 	shell.dir = global_rotation
