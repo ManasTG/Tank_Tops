@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dav35ioc13vru"]
+
+[ext_resource type="Script" uid="uid://dywqgrycwj31f" path="res://scripts/tanks/enemyTank/enemy_tank_1.gd" id="1_r2dho"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgafw"]
+size = Vector2(32, 48)
+
+[node name="EnemyTank1" type="CharacterBody2D" unique_id=1430705 groups=["enemy_tank"]]
+collision_layer = 5
+script = ExtResource("1_r2dho")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1763491716]
+shape = SubResource("RectangleShape2D_hgafw")
+
+[node name="base" type="ColorRect" parent="." unique_id=1890134046]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 16.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.041656494, 0.25390625, 0.1792872, 1)
+
+[node name="turret" type="Node2D" parent="." unique_id=1822851961]
+
+[node name="barrel" type="ColorRect" parent="turret" unique_id=1382303358 groups=["enemy_tank"]]
+offset_left = -3.0
+offset_top = -25.0
+offset_right = 3.0
+offset_bottom = 1.0
+metadata/_edit_use_anchors_ = true

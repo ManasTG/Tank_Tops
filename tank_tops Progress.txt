@@ -19,13 +19,12 @@ Phase 3(6or8 -12 Months):
 
 Follow: tank_top
 
-7-1-25
+7-1-26
 TODO: Set up the main playground, BG, make the block move
 Done: BG, Made the block move like a tank (extra: Fix the reverse direction issue of tank,)
 
-8-1-25
+8-1-26
 TODO: Shooting mechanism(just click and shoot); if time allows then turrent rotation following cursor(no shooting with it)
-
 
 29-5-26
 TODO: Click and shoot.
@@ -45,4 +44,8 @@ Done: 1. Made the shell not interfere by making it such that the shell and the t
 
 16-6-26
 TODO: Health System: 1. Make an static enemy tank which has health. 2. Whenever the 'enemy tank' is hit the health goes down
+Done: Completed all of the above
+
+17-6-26
+TODO: 1. Make turret Rotate. 2. Heatlh UI above enemy tank
 Done:
